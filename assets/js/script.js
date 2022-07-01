@@ -28,7 +28,7 @@ function timeCheck(time, timebox) {
     }
 }
 
-timeCheck(9 , timeNine)
+timeCheck(09 , timeNine)
 timeCheck(10 , timeTen)
 timeCheck(11 , timeEleven)
 timeCheck(12 , timeTwelve)
@@ -56,16 +56,16 @@ function save(event){
 }
 
 function refresh(){
-timeNine.text(localStorage.getItem("button9"))  
-timeTen.text(localStorage.getItem("button10"))  
-timeEleven.text(localStorage.getItem("button11"))  
-timeTwelve.text(localStorage.getItem("button12"))  
-timeOne.text(localStorage.getItem("button13"))  
-timeTwo.text(localStorage.getItem("button14"))  
-timeThree.text(localStorage.getItem("button15"))  
-timeFour.text(localStorage.getItem("button16"))  
-timeFive.text(localStorage.getItem("button17"))  
-timeSix.text(localStorage.getItem("button18"))  
+    timeNine.text(localStorage.getItem("button9"))  
+    timeTen.text(localStorage.getItem("button10"))  
+    timeEleven.text(localStorage.getItem("button11"))  
+    timeTwelve.text(localStorage.getItem("button12"))  
+    timeOne.text(localStorage.getItem("button13"))  
+    timeTwo.text(localStorage.getItem("button14"))  
+    timeThree.text(localStorage.getItem("button15"))  
+    timeFour.text(localStorage.getItem("button16"))  
+    timeFive.text(localStorage.getItem("button17"))  
+    timeSix.text(localStorage.getItem("button18"))  
 }
 refresh()
 // function getLocalStorage(button){
