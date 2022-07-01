@@ -16,7 +16,7 @@ var UpdateTime = function () {
 }
 setInterval(UpdateTime, 1000);
 
-var currentHour = 11//moment().format("H")
+var currentHour = moment().format("H")
 
 function timeCheck(time, timebox) {
     if(time > currentHour){
@@ -45,13 +45,31 @@ var button = $('.btn')
 button.on('click', save )
 
 function save(event){
-    console.log("saved")
     var targetButton = event.target
-    saveItem = $(this).siblings("textarea").val()
+    var saveItem = $(this).siblings("textarea").val()
+    if (saveItem === ""){
+        console.log("Need Text box fill")
+    } else {
     console.log(saveItem)
     localStorage.setItem(targetButton.id, saveItem)
 }
-
-function getLocalStorage(){
-
 }
+
+function refresh(){
+timeNine.text(localStorage.getItem("button9"))  
+timeTen.text(localStorage.getItem("button10"))  
+timeEleven.text(localStorage.getItem("button11"))  
+timeTwelve.text(localStorage.getItem("button12"))  
+timeOne.text(localStorage.getItem("button13"))  
+timeTwo.text(localStorage.getItem("button14"))  
+timeThree.text(localStorage.getItem("button15"))  
+timeFour.text(localStorage.getItem("button16"))  
+timeFive.text(localStorage.getItem("button17"))  
+timeSix.text(localStorage.getItem("button18"))  
+}
+refresh()
+// function getLocalStorage(button){
+//     localStorage.getItem(button)
+// }
+// getLocalStorage(button9)
+// timeNine.text = getLocalStorage(button9)
