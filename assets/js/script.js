@@ -16,8 +16,8 @@ var UpdateTime = function () {
 }
 setInterval(UpdateTime, 1000);
 
+//Hour check logic to apply color
 var currentHour = moment().format("H")
-
 function timeCheck(time, timebox) {
     if(time > currentHour){
         timebox.addClass("future")
@@ -28,6 +28,7 @@ function timeCheck(time, timebox) {
     }
 }
 
+//check for all boxes
 timeCheck(09 , timeNine)
 timeCheck(10 , timeTen)
 timeCheck(11 , timeEleven)
@@ -55,6 +56,7 @@ function save(event){
 }
 }
 
+//on refresh
 function refresh(){
     timeNine.text(localStorage.getItem("button9"))  
     timeTen.text(localStorage.getItem("button10"))  
@@ -68,8 +70,3 @@ function refresh(){
     timeSix.text(localStorage.getItem("button18"))  
 }
 refresh()
-// function getLocalStorage(button){
-//     localStorage.getItem(button)
-// }
-// getLocalStorage(button9)
-// timeNine.text = getLocalStorage(button9)
