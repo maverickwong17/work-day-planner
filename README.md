@@ -1,20 +1,12 @@
 # work-day-planner
 
+ ---
+
 ## Description 
 
-## [Deployed Link](https://github.com/microsoft/vscode).
+## [Deployed Link](https://maverickwong17.github.io/work-day-planner/).
 
-Your GitHub profile is an extremely important aspect of your public identity as a developer. A well-crafted one allows you to show off your work to other developers as well as potential employers. An important component of your GitHub profile—and one that many new developers often overlook—is the README.md file.
-
-The quality of a README often differentiates a good project from a bad project. A good one takes advantage of the opportunity to explain and showcase what your application does, justify the technologies used, and even talk about some of the challenges you faced and features you hope to implement in the future. A good README helps you stand out among the large crowd of developers putting their work on GitHub.
-
-There's no one right way to structure a good README. There is one very wrong way, however, and that is to not include a README at all or to create a very anemic one. This guide outlines a few best practices. As you progress in your career, you will develop your own ideas about what makes a good README.
-
-At a minimum, your project README needs a title and a short description explaining the what, why, and how. What was your motivation? Why did you build this project? (Note: The answer is not "Because it was a homework assignment.") What problem does it solve? What did you learn? What makes your project stand out? 
-
-Lastly, if your project is deployed, include a link to the deployed application here.
-
-
+This application is a daily work planner. It will update to show the current day, date, and time. The text blocks will save locally and persist on refresh, as well as color code based on the time.(Grey for past, red for present, green for future timeslots). This is my first implementation of bootstrap, jquery, and other 3rd party web APIs.
 
 
 ## Table of Contents (Optional)
@@ -29,25 +21,35 @@ If your README is very long, add a table of contents to make it easy for users t
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
+Clone repository and run on local machine or use deployed link above
 
 ## Usage 
 
-Provide instructions and examples for use. Include screenshots as needed. 
+This will keep track of the cuurent date and time, and allow the user to input and plan their day. This will persist on refresh through access of local storage. 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-```md
-![alt text](assets/images/screenshot.png)
-```
+
+Save button functionality for local storage:
+
+![alt text](assets/images/saveItem.png)
+
+
+Update color for text boxes based on time of day: 
+![alt text](assets/images/showdaycolor.png)
+
 
 
 ## Credits
 
 [w3 Schools](https://www.w3schools.com/)
 
+[Momentjs](https://momentjs.com/)
 
+[Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+
+[Font Awesome](https://fontawesome.com/v5/search)
+
+[JQuery](https://jquery.com/)
 
 Kavya Mandla
 
